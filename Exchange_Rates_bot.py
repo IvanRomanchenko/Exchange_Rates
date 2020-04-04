@@ -44,7 +44,7 @@ keyboard1 = telebot.types.ReplyKeyboardMarkup(True).row("EUR/UAH")
 curr = Currency()
 
 @bot.message_handler(commands=["start"])
-def start_message(mes):
+def start_message(mes:str) -> str:
     bot.send_message(mes.chat.id, "Привет, юзер!\nЭтот бот поможет тебе следить за курсом валют.", reply_markup=keyboard1)
 
 
