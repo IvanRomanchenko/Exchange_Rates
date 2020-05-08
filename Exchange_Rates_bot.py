@@ -53,7 +53,7 @@ class Currency:
 
         
 
-bot = telebot.TeleBot("секретный код")
+bot = telebot.TeleBot("здесь должен быть секретный код для управления ботом")
 keyboard1 = telebot.types.ReplyKeyboardMarkup(True).row("EUR/UAH")
 curr = Currency()
 
